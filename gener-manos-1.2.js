@@ -113,3 +113,53 @@ function testNumBaraja(numEjemplos) {
 
 // Uso de la función testNumBaraja para generar y mostrar en consola números de la baraja de poker
 testNumBaraja(10);
+
+
+/*
+
+class mesa {
+    constructor() {
+        this.generador = new GeneradorMesa();
+    }
+}
+    /* PROPIEDADES que debe tener: numJugadores, stake, ante, pozo,
+
+            numJugadores: el num d jugadores que hay en la mesa en un momento dado( cada mesa tiene un minimo y un máximo)
+                - mínJugadores.: el mínimo de jugadores necesario para que la mesa esté abierta.
+                - máxJugadores: el máximo de jugadores que puede haber en una mesa
+
+            stake: tiene un minimo y un máximo ( no se puede entrar con menos del mínimo ni más del máximo). 
+                    ej: NL2 el ante es el 7% del pozo, en NL20 es el 5% del pozo..
+
+            apuestas totales: es el total de bb o dinero +  antes en una mano
+
+            ANTE: % del pozo que la casa gana en cada mano
+                NL2 = ante = 7
+                NL10 = ante = 6
+                NL20 = ante = 5
+
+            pozo: es el dinero total en bb o dinero real (cada bb tiene su asignación en dinero real segun el stake)
+            la formula pa calcularlo es = ante + apuestasTotales
+
+            ej instancia mesa: new mesa = NL20 (numJugadores, stake, ante, pozo)
+                new mesa = NL20(5, 20, ante, pozo)
+
+
+            class jugador(){
+            
+                propiedades: 
+                    - banca ( es el dinero total que tiene para jugar en su cuenta)
+                    - bancaEnMesa (el dinero con el que el jugador ha entrado en una mesa)
+                    - 2 cartas
+
+                metodos: 
+                    - apostar
+                    - checkear
+                    - foldea
+
+                    - entrarEnMesa
+                    - salirDeMesa
+                    - ausentarse
+
+            
+            }*/
